@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header className="">
-      <div className=" mx-auto flex justify-between items-center max-w-6xl p-4">
+      <div className=" mx-auto flex justify-between items-center max-w-6xl p-4 bg-teal-700/30">
         <Link to={"/"}>
           <h1 className=" font-bold text-lg sm:text-2xl flex flex-wrap">
             <span className=" text-orange-600">ALX</span>
-            <span className=" text-emerald-700">Estate</span>
+            <span className=" text-teal-700">Estate</span>
           </h1>
         </Link>
-        <form className=" flex items-center border-[2px] border-orange-400 px-2 py-1 rounded-lg">
+        <form className=" flex items-center border-[2px] border-orange-400 px-2 py-1 rounded-lg bg-orange-200/50">
           <input
             type="text"
             placeholder="Search..."
@@ -21,13 +21,13 @@ const Header = () => {
           <FaSearch size={18} className=" text-orange-400" />
         </form>
         <ul className=" flex gap-4">
-          <li className=" text-orange-600 font-bold hidden cursor-pointer sm:inline hover:underline">
+          <li className=" text-orange-600 font-semibold hidden cursor-pointer sm:inline hover:underline">
             <Link to={"/"}>Home</Link>
           </li>
-          <li className=" text-orange-600 font-bold hidden cursor-pointer sm:inline hover:underline">
+          <li className=" text-orange-600 font-semibold hidden cursor-pointer sm:inline hover:underline">
             <Link to={"/about"}>About</Link>
           </li>
-          <li className=" text-orange-600 font-bold cursor-pointer hover:underline">
+          <li className=" text-orange-600 font-semibold cursor-pointer hover:underline">
             <Link to={"/sign-in"}>Sign In</Link>
           </li>
         </ul>
